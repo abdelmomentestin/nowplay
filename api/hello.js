@@ -4,7 +4,7 @@ module.exports = (req, res) => {
     .then(function (results) {
         // handle success
         console.log(results);
-        return res.json(results)
+        return res.json(results.data)
     })
     .catch(function (error) {
         // handle error
